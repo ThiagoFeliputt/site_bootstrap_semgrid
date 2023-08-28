@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripBooker</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/TripBooker_Icon.png">
+</head>
+<body>
+
+    <nav class="navbar bg-light navbar-light navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/TripBooker_Logo.png" alt="Bootstrap" width="120" height="70">
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pacotes">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Direitos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/TripBooker_Carousel1.png" class="d-block w-100" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/TripBooker_Carousel2.png" class="d-block w-100" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/TripBooker_Carousel3.png" class="d-block w-100" alt="Imagem 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-5">
+        <div class="card-group" id="pacotes">
+            <div class="card">
+                <img src="./img/TripBooker_Card1.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ilhas Canárias, Espanha - R$5.899</h5>
+                    <p class="card-text">As Ilhas Canárias, um arquipélago espanhol ao largo da costa noroeste da África, são ilhas vulcânicas acidentadas conhecidas por suas praias de areia preta e branca.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        Ver mais...
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/TripBooker_Card2.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Amalfi, Itália - R$3.899</h5>
+                    <p class="card-text">Amalfi é uma cidade num deslumbrante cenário natural sob penhascos íngremes na costa sudoeste de Itália.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Ver mais...
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/TripBooker_Card3.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Gdansk, Polônia - R$2.149</h5>
+                    <p class="card-text">Gdansk (Danzig em alemão) é uma cidade portuária situada na costa báltica da Polônia.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        Ver mais...
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center" id="sobre">Sobre</h2>
+        <div class="container ml-5 mr-3 mt-3">
+            <p>O TripBooker, a maior plataforma de viagens do mundo, ajuda milhões de viajantes todos os meses a tornar cada viagem a melhor de todas. Pessoas do mundo todo usam o site do TripBooker para acessar mais de 1,6 bilhão de avaliações e opiniões sobre 18,6 milhões de acomodações, restaurantes, experiências, companhias aéreas e cruzeiros. Seja na fase de planejamento ou durante a viagem, o TripBooker é usado para comparar preços baixos de hotéis, voos e cruzeiros, para reservar excursões e atrações badaladas, além de para fazer reservas em ótimos restaurantes.</p>
+        </div>
+    </div>
+
+    <footer id="footer" class="page-footer mt-5 py-3 text-center"
+            style="background-color: #333; color: #ffffff;">
+        <div class="container">
+            <p>&copy; 2023 TripBooker LTDA. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Reservar pacote de viagem</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <img src="./img/TripBooker_Card1.png" class="card-img-top rounded" alt="...">
+                    <p class="card-text">As ensolaradas Ilhas Canárias ficam próximas ao norte da África e têm um estilo exótico muito próprio. Centenas de vulcões, dunas, ricas florestas e penhascos íngremes marcam essas sete joias do Atlântico. Pegue uma barca até Lanzarote. Faça um passeio a camelo pela paisagem vulcânica do Parque Nacional de Timanfaya. Vá até Tenerife, que abriga o Monte Teide, o pico mais alto da Espanha. Brinque nas praias da Gran Canária ou caminhe pelo Parque Nacional de Garajonay, em La Gomera. Mais aventuras o aguardam na minúscula El Hierro, na verdejante La Palma e na tranquila Fuerteventura.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Conferir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Reservar pacote de viagem</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <img src="./img/TripBooker_Card2.png" class="card-img-top rounded" alt="...">
+                    <p class="card-text">Se esta é sua primeira vez visitando a Amalfi Coast, é provável que você fique surpreso da primeira vez que vir uma banca de limonada na beira da estrada. Sim, eles são limões, e sim, eles têm o tamanho da sua cabeça. Mas por causa da sua aparência incomum, você vai passar a amar esses limões porque os moradores da área os usam para produzir limoncello. E pode apostar, não há nada como um copo de limoncello enquanto admira o mar da varanda de seu hotel em Amalfi. É praticamente a perfeição.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Conferir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Reservar pacote de viagem</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <img src="./img/TripBooker_Card3.png" class="card-img-top rounded" alt="...">
+                    <p class="card-text">Uma das mais belas cidades da Polônia, Gdansk, que fica no Mar Báltico, desempenhou uma importante função na história, especialmente no século XX. A cidade foi dos principais pontos de conflito, em 1939, da Segunda Guerra Mundial. Posteriormente, em 1980, foi o local onde nasceu o movimento trabalhista Solidarnosc, que conduziu o fim do domínio comunista no leste europeu. O Centro histórico de Gdansk, cuidadosamente reconstruído nos moldes da gloriosa Liga Hanseática após ter sido destruído na Segunda Guerra Mundial, é um dos destaques da visita. A sede da prefeitura, que data do século XIV, abriga o museu de história da cidade.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Conferir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
